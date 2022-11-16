@@ -1,0 +1,102 @@
+@charset "UFT-8";
+
+body {
+    margin: 10px;
+    /*background-image: linear-gradient(to right bottom, #695fad8f, #dfdbf0b9);*/
+    background-image: url(fundotec.webp);
+    background-repeat: no-repeat; /*Para não repetir a imagem de fundo*/
+    background-size: 100%; /*Para ocupar 100% da tela*/
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #6e5ae285;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    line-height: 20px;
+}
+
+li.menu {
+    display: inline-block;
+    text-align: center;
+    padding-left: 40px;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.intro {
+    padding-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    text-transform: uppercase; /*Coloca todas em ltra maiúsculas*/
+    word-spacing: 5px; /*Espaçamento entre as letras*/
+    color: white;
+}
+
+h2 {
+    background-color: #6e5ae25d;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px;
+}
+
+h3 {
+    background-color: #a394f065;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px;
+}
+
+h4 {
+    background-color: #a394f065;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px;
+}
+
+article {
+    background-color: #E8E3FF;
+    width: 900px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+p {
+    text-align: justify;
+    padding-left: 30px; 
+    padding-right: 30px; /*parecido com uma margem, ou seja, um espaço no lado direito*/
+    text-indent: 25px; /* Coloca espaçamentos dos parágrafos*/
+}
+
+.finalizacao {
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #6e5ae285;
+    color: white;
+    text-align: center;
+}
+
+footer > small > a{
+    text-decoration: none;
+    color: white;
+}
+
+footer > small > a:hover {
+    color: brown;
+}

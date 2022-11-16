@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /*espaço uniforme, ou seja, espaçamento IGUAL*/
+    gap: 2VW;
+    padding: 2vw;
+}
