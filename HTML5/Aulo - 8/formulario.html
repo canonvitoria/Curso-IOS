@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="shortcut icon" href="logohtml.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="get">
+        <fieldset>
+            <legend>Identificação</legend>
+
+            <label for="cNome">Nome: </label>
+            <input type="text" name="nome" id="cNome" size="40" required>
+
+            <p style="text-align: left;">Você mora em: </p>
+            <input type="radio" name="tipo" id="POA" value="p">
+            <label for="POA">Porto Alegra</label>
+
+            <input type="radio" name="tipo" id="SP" value="s">
+            <label for="SP">São Paulo</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Formações</legend>
+
+            <p style="text-align: left;">Qual a sua formação?</p>
+            <input type="checkbox" name="formacao1" id="formacao1" value="web">
+            <label for="formacao1">Programação Web</label>
+
+            <input type="checkbox" name="formacao2" id="formacao2" value="erp">
+            <label for="formacao2">ERP - Protheus</label>
+
+            <input type="checkbox" name="formacao3" id="formacao3" value="bigdata">
+            <label for="formacao3">Big Datas</label>
+            <br><br>
+
+            <label for="curso">Selecione sua disciplina: </label>
+            <select name="curso" id="curso">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="php">PHP</option>
+                <option value="mysql">My SQL</option>
+            </select>
+        </fieldset>
+        
+        <br>
+
+        <fieldset>
+            <legend>Design</legend>
+
+            <label for="cCor ">Escolha sua cor: </label>
+            <input list="cores" name="cor" id="icor" placeholder="Digite sua cor desejada">
+
+            <datalist id="cores">
+                <option value="Amarelo"></option>
+                <option value="Azul"></option>
+                <option value="Vermelho"></option>
+                <option value="Verde"></option>
+                <option value="Cinza"></option>
+            </datalist>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Exemplo de Range e Number</legend>
+
+            0 <input type="range">100
+
+            <br><br>
+
+            <input type="number">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Sugestões, críticas e elogios:</legend>
+
+            <textarea name="txt" id="itxt" cols="60" rows="5" style="resize: none;"></textarea>
+        </fieldset>
+
+        
+        <p><input type="submit" value="ENVIAR" id="botao"></p>
+        
+    </form>
+</body>
+</html>

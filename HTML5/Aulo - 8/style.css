@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightgrey;
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    margin: auto;
+    width: 700px;
+    background-color: white;
+}
+
+legend {
+    background-color: white;
+}
+
+p {
+    text-align: center;
+}
