@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+}
+
+.container div {
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+
+.item-box-1{
+    flex: 1;
+    order: 2;
+    background-color: rgb(243, 125, 125);
+    align-self: flex-start; /*contrareia a configuração geral dos elementos*/
+}
+
+.item-box-2{
+    flex: 1;
+    order: 1;
+    background-color: rgb(129, 190, 129);
+}
+
+.item-box-3{
+    flex: 1; /*largura do container*/
+    order: 3; /*ordem de exibição dos itens do container*/
+    background-color: rgb(240, 240, 147);
+}
